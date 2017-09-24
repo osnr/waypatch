@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Waypatch",
+  "description": "Wayback Machine patchwork time travel.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://web.archive.org/*", "http://web.archive.org/*"],
+      "js": ["hook.js"],
+      "all_frames": true
+    }
+  ]
+}
